@@ -23,16 +23,13 @@ def txt_to_polyline(in_txt,out_shp):
     features = []
     with open(in_txt,'r') as in_file:
         next(in_file)
-
-        # polyline = arcpy.Array()
+        
         coords = ''
 
         for row in in_file:
             if '-' in row:
                 coords+=row.strip('\n')
                 coords+=','
-                # coords= arcpy.Point(float(row.split(' ')[0]), float(row.split(' ')[1].strip('\n')))
-                # polyline.append(coords)
 
             else: 
                 coords = coords.strip(',')

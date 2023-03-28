@@ -13,12 +13,28 @@
       "justMyCode": true
     },
     {
+      "name": "Python: geom_obj02",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "..\\..\\..\\..\\data\\canada.txt",
+        "..\\..\\..\\..\\data\\canada_week11\\canada_wkt.shp"
+      ]
+    },
+    {
       "name": "Python: geom_obj01",
       "type": "python",
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "args": [
+        "..\\..\\..\\..\\data\\canada.txt",
+        "..\\..\\..\\..\\data\\canada_week11\\canada.shp"
+      ]
     }
   ]
 }
